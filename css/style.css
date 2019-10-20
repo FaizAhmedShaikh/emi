@@ -1,0 +1,151 @@
+*{margin: 0;padding: 0;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box}
+body {font-size: 14px;overflow-x: hidden;line-height: 1.47;font-family: 'Muli';color: #ffffff;}
+.clearfix:after {content: " ";visibility: hidden;display: block;height: 0;clear: both}
+.clearfix:after {content: "";display: table;clear: both}
+a {text-decoration: none}
+a:focus,a:hover {color: inherit}
+a:focus,button:focus {outline: 0!important}
+a:focus,a:hover {text-decoration: none}
+p {margin: 0}
+ul {padding: 0;margin: 0;list-style: none;margin-bottom: 0}
+h1,h2,h3,h4,h5,h6 {margin: 0;padding: 0;font-weight: 400}
+label {margin: 0;font-weight: 400}
+img {border: 0}
+svg:not(:root) {overflow: hidden}
+.pull-left {float: left}
+.pull-right {float: right}
+
+
+/* -- container -- */
+.container{max-width: 1170px; width: 100%; margin: 0 auto; padding: 0 15px;}
+/* -- container -- */
+
+
+/* -- Header -- */
+header{background:transparent;padding: 25px 0;}
+.header-section{display: flex; align-items: center; flex-wrap:wrap; }
+.sticky-header{position: fixed; width: 100%; left: 0;top:0; background: #f8c5b0;z-index: 1;padding: 10px 0;-webkit-box-shadow: -1px 0px 7px 1px rgba(0,0,0,0.35);-moz-box-shadow: -1px 0px 7px 1px rgba(0,0,0,0.35);box-shadow: -1px 0px 7px 1px rgba(0,0,0,0.35);}
+.download-app {height: 56px;width: 168px; margin-left: auto;display: none;}
+.sticky-header .download-app{display: block;}
+/* -- Header -- */
+
+
+/* -- Logo -- */
+.logo {	height: 33px;width: 87px;display: inline-block;vertical-align: middle; margin-right: 158px;}
+/* -- Logo -- */
+
+
+/* -- Navigation -- */
+nav, nav li {display: inline-block;vertical-align: middle;}
+nav li{color: #FFFFFF;font-family: Muli;font-size: 18px;font-weight: bold;line-height: 23px;margin-right: 55px;}
+nav li a{color: #fff;display: block;}
+nav li.active{position: relative}
+nav li.active::before,
+nav li.active::after{content: "";height: 4px; width: 4px; background: #fff; position: absolute;top: 0;
+                     bottom: 0; margin: auto; border-radius: 100px;}
+nav li.active::before{left: -12px;}
+nav li.active::after{right: -12px;}
+/* -- Navigation -- */
+
+
+/* -- About Us -- */
+
+    /* -- Section-1 -- */
+    .aboutus-section-1{background: #f5e1d6 url(../images/About-bg-1.png) no-repeat top center; background-size: cover;
+        height: 735px;}
+    .aboutus-section-1 section{display: flex;align-items: center;justify-content: center;height: 100%;}
+    .strong-relationships {color: #FFFFFF;	font-family: Spectral;font-size: 40px;font-weight: 800;	letter-spacing: 0.5px;	line-height: 56px;	text-align: center; margin-bottom: 35px;}
+    .live-happier-and-hea {color: #FFFFFF;font-family: Muli;font-size: 24px;line-height: 36px;text-align: center;}
+    /* -- Section-1 -- */
+
+
+    /* -- Section-2 -- */
+    .aboutus-section-2{background: #f5e1d6;}
+    .emi-means-smile-in {margin-bottom: 30px;color: #EE797F;font-family: Spectral;font-size: 32px;font-weight: 800;letter-spacing: 0.4px;line-height: 44px;}
+    .heart-img{margin: 75px 0;}
+    .details-text span{color: #3F5260;	font-weight: 400; font-size: 24px;line-height: 36px; width: 500px;float: left;}
+    .details-text span:last-child{margin-left: 140px;}
+    .heart-img-2{margin: 75px 0; float: right;}
+    /* -- Section-2 -- */
+
+
+    /* -- Section-3 -- */
+    .aboutus-section-3{background: #f5e1d6 url(../images/Team-bg.png) no-repeat top center; background-size: cover;
+                    height: 795px;display: flex;align-items: center;justify-content: center;}
+    .subheading {color: #EE797F;font-family: Spectral;font-size: 40px;font-weight: 800;letter-spacing: 0.5px;line-height: 56px;text-align: center;margin-bottom: 80px;}
+    .team-box{width: 100%;height: 430px;}
+    .team-section{display: flex;flex-wrap: wrap;align-items: center;justify-content: space-around;}
+    .team-section li img{height: 182px;	width: 182px;}
+    .team-section .descp{margin-top: 30px;}
+    .team-section .descp p {color: #3F5260;	font-family: Spectral;font-size: 24px;font-weight: 800;letter-spacing: 0.3px;	line-height: 48px;	text-align: center;}
+    .team-section .descp article{color: #3F5260;font-family: Muli;font-size: 18px;line-height: 24px;text-align: center;}
+    /* -- Section-3 -- */
+
+
+    /* -- Section-4 -- */
+    .aboutus-section-4{background: #f5e1d6; height: 653px;display: flex;align-items: center;justify-content: center;}
+    .email-box{height: 170px;;color: #75678A;	font-family: Spectral;	font-size: 40px;	font-weight: 800;	letter-spacing: 0.5px;	line-height: 56px;	text-align: center;}
+    .email-box a{color: #fb8f70;}
+    /* -- Section-4 -- */
+
+/* -- About Us -- */
+
+
+/* -- FAQ -- */
+
+    /* -- Section-1 -- */
+    .faq-section-1{background: #f5e1d6 url(../images/FAQ-bg.png) no-repeat top center; background-size: cover;
+        height: 735px;}
+    .faq-section-1 section{display: flex;align-items: center;justify-content: center;height: 100%;}
+    .if-you-don-t-see-you {width: 610px;margin: 0 auto;color: #FFFFFF;	font-family: Muli;	font-size: 24px;	line-height: 36px;	text-align: center;}
+    /* -- Section-1  -- */
+    
+    
+    /* -- Section-2 -- */
+    .faq-section-2{background: #f5e1d6;padding: 100px 0;}
+    .emi-text-faq {color: #6BA7AF;font-family: Spectral;font-size: 40px;font-weight: 800;letter-spacing: 0.5px;line-height: 56px;text-align: center;}
+    
+    .accordionWrapper{width:80%; margin: 50px auto 0;}
+    .accordionItem{display:block; margin-bottom: 20px;background-color: #fff;border-radius: 20px;}
+    .accordionItemHeading{border-radius: 20px 20px 0 0;cursor:pointer;padding:30px;	color: #3F5260;	
+                          font-family: Spectral;font-size: 24px;font-weight: 800;letter-spacing: 0.3px;line-height: 32px;}
+    .close .accordionItemContent{height:0px;transition:height 1s ease-out;-webkit-transform: scaleY(0);
+                                transform: scaleY(0);float:left;display:block;    }
+    .accordionItemContent{padding: 30px;padding-top: 0;display:block;-webkit-transform: scaleY(1);transform: scaleY(1);
+                         -webkit-transform-origin: top;transform-origin: top;transition: -webkit-transform 0.4s ease;
+                         transition: transform 0.4s ease;transition: transform 0.4s ease, -webkit-transform 0.4s ease;
+                         color: #3F5260;	font-family: Muli;	font-size: 18px;	line-height: 28px;}
+
+
+
+    /* -- Section-2 -- */
+
+/* -- FAQ -- */
+
+
+/* -- 404 -- */
+.erroe404-page{background: url(../images/404.png) no-repeat top center; background-size: cover;
+    height: 890px;}
+.custom-btn {width: 171px;border-radius: 8px;background-color: #FB8F70;padding: 15px;text-align: center;
+             margin: 0 auto;color: #FFFFFF;font-family: Muli;font-size: 18px;font-weight: bold;line-height: 23px;}
+.erroe404-page section{display: flex;align-items: center;justify-content: center;height: 100%;}
+/* -- 404 -- */
+
+
+
+
+
+
+/* -- footer -- */
+footer{background: #f5e1d6 url(../images/footer-background.svg) no-repeat top center; background-size: cover;
+       height: 235px;display: flex;align-items: flex-end;}
+.footer-box{display: flex;align-items: center;justify-content: space-between;width: 100%;flex-wrap: wrap;}
+.sign-up-for-our-news {color: #FFFFFF;	font-family: Spectral;	font-size: 24px;	font-weight: 800;	letter-spacing: 0.3px;	line-height: 52px;}
+.socai-media a{display: inline-block; vertical-align: middle;padding-right: 40px; }
+.socai-media a:last-child{padding-right: 0;}
+.socai-media a img {	height:36px;	width: 36px;}
+.ters-cond-box a{padding-right: 40px; display: inline-block;vertical-align: middle;color: #FFFFFF;	font-family: Muli;	font-size: 18px;	font-weight: bold;	line-height: 23px;}
+.ters-cond-box a:last-child{padding-right: 0;}
+.emi-inc-all {margin: 20px 0;color: #FFFFFF;	font-family: Muli;	font-size: 12px;text-align: center;line-height: 16px;}
+/* -- footer -- */
+
