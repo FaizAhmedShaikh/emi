@@ -28,7 +28,7 @@
                                 <img src="images/logo.png" alt="EMI logo" title="EMI Logo">
                             </a>
                         </div>
-                        <nav>
+                        <nav class="web-menu">
                             <ul>
                                 <li class="active">
                                     <a href="about.html">About Us</a>
@@ -36,13 +36,56 @@
                                 <li>
                                     <a href="404.html">Blog</a>
                                 </li>
-                                <li >
+                                <li>
                                     <a href="faq.html">FAQ</a>
                                 </li>
                             </ul>
                         </nav>
                         <div class="download-app">
                             <img src="images/download-app.svg">
+                        </div>
+                        <div class="mobile-menu-icon" onclick="openNav()">
+                            <a href="javascript:void(0)">
+                                <img src="images/mobile-menu.svg">
+                            </a>
+                        </div>
+                        <div id="mySidepanel" class="mobile-panel">
+                            <div class="mobile-panel-box">
+                                <div class="mobile-panel-heading">
+                                    <a href="javascript:void(0)">
+                                        <img src="images/logo.png">
+                                    </a>
+                                    <a href="javascript:void(0)" class="menu-close" onclick="closeNav()">
+                                        <img src="images/close.svg">
+                                    </a>
+                                </div>
+                                <div class="menu-navigation">
+                                    <nav>
+                                        <ul>
+                                            <li class="active">
+                                                <a href="about.html">About Us</a>
+                                            </li>
+                                            <li>
+                                                <a href="404.html">Blog</a>
+                                            </li>
+                                            <li>
+                                                <a href="faq.html">FAQ</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                    <div class="socai-media">
+                                        <a href="">
+                                            <img src="images/facebook.png" alt="facebook">
+                                        </a>
+                                        <a href="">
+                                            <img src="images/instagram.png" alt="instagram">
+                                        </a>
+                                    </div>
+                                    <div class="download-app">
+                                        <img src="images/download-app.svg">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -121,7 +164,12 @@
                 <div class="footer-box">
                     <div class="newsletter">
                         <p class="sign-up-for-our-news">Sign up for our newsletter</p>
-                        <input/>
+                        <div class="email-textbox-section">
+                            <input type="email" placeholder="Enter your email" class="enter-your-email" />
+                            <button class="send-btn">
+                                <img src="images/send.svg" />
+                            </button>
+                        </div>
                     </div>
                     <div class="socai-media">
                         <a href="">
@@ -137,8 +185,6 @@
                     </div>
                 </div>
                 <div class="emi-inc-all">© 2019 Emi Inc. All Rights Reserved. </div>
-
-
             </div>
         </footer>
     </div>
@@ -156,6 +202,17 @@
         } else {
             header.classList.remove("sticky-header");
         }
+    }
+</script>
+<script>
+    function openNav() {
+        document.getElementById("mySidepanel").style.width = "100%";
+        document.body.style.overflow = "hidden";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidepanel").style.width = "0";
+        document.body.style.overflow = "auto";
     }
 </script>
 
