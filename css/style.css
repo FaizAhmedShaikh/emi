@@ -55,6 +55,41 @@ nav li.active::after{right: -12px;}
 /* -- Navigation -- */
 
 
+/* -- Home page -- */
+.homepage-wrapper{background: #f5e1d6;}
+.homepage-section-1{background: url(../images/Main-page-shape.svg) no-repeat;height: 710px;}
+
+.your-daily-relations {width: 249px;color: #FFFFFF;	font-family: Spectral;	font-size: 40px;	font-weight: 800;	letter-spacing: 0.5px;	line-height: 56px;padding-top:70px;}
+.your-daily-relations img{margin-top:30px;}
+
+
+
+.homepage-section-1 .image-section{background: url(../images/points.svg) no-repeat; height: 540px;width: 655px;text-align: center;}
+
+.image-text-section{padding: 50px 0;display: flex; flex-wrap: wrap;}
+.right-side{margin-left: auto}
+
+.homepage-section-2 .image-section{background: url(../images/mobile2-bg.svg) no-repeat;height: 710px; 
+                                   width: 578px; text-align: center; background-size:contain }
+.image-text-section {align-items: center;}
+.descp-section{width: 370px;}
+.descp-section h2 {color: #4E63CB;font-family: Spectral;font-size: 32px;font-weight: 800;letter-spacing: 0.4px;line-height: 44px;
+                   margin-bottom: 10px}
+.descp-section p {color: #3F5260;font-family: Muli;font-size: 24px;line-height: 36px;}
+
+.homepage-section-3 .image-section{background: url(../images/mobile3-bg.svg) no-repeat;height: 710px; 
+                                   width: 578px; text-align: center; background-size:contain }
+.homepage-section-3 .descp-section h2{color:#6ba7af} 
+
+.homepage-section-4{background: url('../images/waves-web.svg') no-repeat right;background-size: 19%;}
+.homepage-section-4 .image-section{background: url(../images/mobile4-bg.svg) no-repeat;height: 710px; 
+    width: 578px; text-align: center; background-size:contain;}
+.homepage-section-4 .descp-section h2{color:#ee797f} 
+/* -- Home Page -- */
+
+
+
+
 /* -- About Us -- */
 
     /* -- Section-1 -- */
