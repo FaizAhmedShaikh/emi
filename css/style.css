@@ -27,7 +27,7 @@ input:focus{outline: 0}
 /* -- Header -- */
 header{background:transparent;padding: 25px 0;-webkit-transition:0.5s;-moz-transition: 0.5s;-ms-transition:  0.5s;-o-transition:  0.5s;transition: 0.5s;}
 .header-section{display: flex; align-items: center; flex-wrap:wrap; }
-.sticky-header{position: fixed; width: 100%; left: 0;top:0; background: #f8c5b0;z-index: 1;padding: 10px 0;
+.sticky-header{position: fixed; width: 100%; left: 0;top:0; background: #f8c5b0;z-index: 10;padding: 10px 0;
     -webkit-box-shadow: -1px 0px 7px 1px rgba(0,0,0,0.35);-moz-box-shadow: -1px 0px 7px 1px rgba(0,0,0,0.35);
     box-shadow: -1px 0px 7px 1px rgba(0,0,0,0.35);-webkit-transition:0.5s;-moz-transition: 0.5s;-ms-transition:  0.5s;-o-transition:  0.5s;transition: 0.5s;}
 .download-app {height: 56px;width: 168px; margin-left: auto;display: none;}
@@ -57,34 +57,83 @@ nav li.active::after{right: -12px;}
 
 /* -- Home page -- */
 .homepage-wrapper{background: #f5e1d6;}
+.homepage-wrapper section{padding: 50px 0; }
 .homepage-section-1{background: url(../images/Main-page-shape.svg) no-repeat;height: 710px;}
 
-.your-daily-relations {width: 249px;color: #FFFFFF;	font-family: Spectral;	font-size: 40px;	font-weight: 800;	letter-spacing: 0.5px;	line-height: 56px;padding-top:70px;}
-.your-daily-relations img{margin-top:30px;}
+.your-daily-relations {width: 488px;color: #FFFFFF;	font-family: Spectral;font-size: 40px;font-weight: 800;
+    	letter-spacing: 0.5px;	line-height: 56px;padding-top: 80px;}
+.homepage-email-textbox-section .enter-your-email{width: 300px;}
+.homepage-email-textbox-section .send-btn{border: 0;background: #FB8F70;width: 173px;border-radius: 8px;color: #FFFFFF;
+         font-family: Muli;font-size: 18px;font-weight: bold;line-height: 23px;position: initial;
+         display: inline-block;vertical-align: bottom;padding: 15px; }
 
 
 
-.homepage-section-1 .image-section{background: url(../images/points.svg) no-repeat; height: 540px;width: 655px;text-align: center;}
 
-.image-text-section{padding: 50px 0;display: flex; flex-wrap: wrap;}
+    
+.image-text-section{display: flex; flex-wrap: wrap;align-items: center;}
 .right-side{margin-left: auto}
-
-.homepage-section-2 .image-section{background: url(../images/mobile2-bg.svg) no-repeat;height: 710px; 
-                                   width: 578px; text-align: center; background-size:contain }
-.image-text-section {align-items: center;}
 .descp-section{width: 370px;}
 .descp-section h2 {color: #4E63CB;font-family: Spectral;font-size: 32px;font-weight: 800;letter-spacing: 0.4px;line-height: 44px;
                    margin-bottom: 10px}
 .descp-section p {color: #3F5260;font-family: Muli;font-size: 24px;line-height: 36px;}
 
-.homepage-section-3 .image-section{background: url(../images/mobile3-bg.svg) no-repeat;height: 710px; 
+.homepage-section-1 .image-text-section{align-items: flex-start;}
+.homepage-section-1 .image-section{background: url(../images/points.svg) no-repeat; height: 540px;width: 550px;
+                                   text-align: center;background-size: contain;}
+.homepage-section-1 .image-section img{height: 528px;}
+
+.homepage-wrapper section.homepage-section-2{padding: 100px 0 50px 0}
+.homepage-section-2 .image-section{background: url(../images/mobile2-bg.svg) no-repeat;height: 550px; 
                                    width: 578px; text-align: center; background-size:contain }
+.homepage-section-2 .image-section img{height: 528px;margin-top: 30px;position: relative;}
+
+
+
+
+.homepage-section-3 .image-section{background: url(../images/mobile3-bg.svg) no-repeat;height: 605px; 
+                                   width: 650px; text-align: center; background-size:contain }
 .homepage-section-3 .descp-section h2{color:#6ba7af} 
+.homepage-section-3 .image-section img{height: 528px; margin-top: 50px;}
+.homepage-section-3 .image-text-section{    position: relative;}
+.homepage-section-3 .image-text-section:after {content: "";background: url(../images/02-01-shape.svg) no-repeat;
+    height: 560px;width: 650px;position: absolute;top: 0;left: -30px;right: 0;bottom: 0;background-size: contain;z-index: 2;}
+.homepage-section-3 .descp-section{width: 330px; margin-left:100px; }
+
 
 .homepage-section-4{background: url('../images/waves-web.svg') no-repeat right;background-size: 19%;}
-.homepage-section-4 .image-section{background: url(../images/mobile4-bg.svg) no-repeat;height: 710px; 
-    width: 578px; text-align: center; background-size:contain;}
+/* .mobile-img{position: absolute;z-index: 1;top: 0;left: 0;right: 0;bottom: 0;margin: auto;}
+.image-section{position: relative;width: 575px;} */
+
 .homepage-section-4 .descp-section h2{color:#ee797f} 
+.homepage-section-4 .image-section{background: url(../images/mobile4-bg.svg) no-repeat;    height: 570px;
+    width: 570px;
+    text-align: center;
+    background-size: contain}
+.homepage-section-4 .image-section img{height: 540px;    margin-top: 0px;  }
+
+
+
+
+
+.testimonial{background: url('../images/testimonials-backgroud.png') no-repeat;background-size: cover;height: 643px;}
+.testimonial-box {display: flex;flex-wrap: wrap;align-items: center;justify-content: center;height: 643px;width: 100%;}
+.testimonial-box{width: 830px;margin: 0 auto}
+.testimonial-content{color: #FFFFFF;font-family: Spectral;font-size: 32px;font-weight: 800;letter-spacing: 0.4px;	
+                     line-height: 52px;	text-align: center;}
+.testimonial-descp{margin-top: 50px;text-align: center}
+.testimonial-descp p{color: #FFFFFF;font-family: Muli;font-size: 24px;font-weight: bold;line-height: 36px;
+                    text-align: center; margin-bottom: 10px;}
+.testimonial-descp article{color: #FFFFFF;font-family: Muli;font-size: 18px;line-height: 23px;}
+
+.carousel-indicators{text-align: center; margin: 30px 0 0 0;}
+.carousel-indicators li{display: inline-block;width: 6px;height: 6px;margin-left: 5px;text-indent: -999px;
+                        cursor: pointer;background: #bac5ea;border-radius: 10px;vertical-align: middle;}
+.carousel-indicators .active {width: 8px;height: 8px;margin: 0;background-color: #fff;}
+
+.downloadapp-section{display: flex; align-items:center; justify-content: center; height: 525px;text-align: center; }
+.downloadapp-section-box{width: 770px; margin: 0 auto;}
+.downloadapp-section p{color: #75678A;font-family: Spectral;font-size: 40px;font-weight: 800;letter-spacing: 0.5px;line-height: 56px;margin-bottom: 30px;}
 /* -- Home Page -- */
 
 
