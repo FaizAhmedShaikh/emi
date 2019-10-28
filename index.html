@@ -192,9 +192,10 @@
         </section>
         <footer>
             <div class="container">
+                <p class="sign-up-for-our-news">Sign up for our newsletter</p>
                 <div class="footer-box">
                     <div class="newsletter">
-                        <p class="sign-up-for-our-news">Sign up for our newsletter</p>
+                        
                         <div class="email-textbox-section">
                             <input type="email" placeholder="Enter your email" class="enter-your-email" />
                             <button class="send-btn">
@@ -212,13 +213,14 @@
                         <a href="">
                             <img src="images/instagram.png" alt="instagram" />
                         </a>
+                        <div class="emi-inc-all">© 2019 Emi Inc. All Rights Reserved. </div>
                     </div>
                     <div class="ters-cond-box">
                         <a href="">Terms &amp; Condition</a>
                         <a href="">Privacy Policy</a>
                     </div>
                 </div>
-                <div class="emi-inc-all">© 2019 Emi Inc. All Rights Reserved. </div>
+                
             </div>
         </footer>
 
@@ -237,11 +239,21 @@
 
     function myFunction() {
         if (window.pageYOffset > sticky) {
-            header.classList.add("sticky-header");
+            //header.classList.add("sticky-header");
+            header.style.background = '#f8c5b0';
+            header.style.transition = 'all 1s ease-in-out';
+            header.style.position = 'fixed';
+            header.style.width = '100%';
+            header.style.zIndex = '99';
+            //header.style.height = "0px";
 
 
         } else {
-            header.classList.remove("sticky-header");
+           // header.classList.remove("sticky-header");
+            header.style.background = 'transparent';
+            header.style.transition = 'all 1s ease-in-out';
+            header.style.position = 'relative';
+           // header.style.height = "100px";
 
         }
     }
