@@ -219,11 +219,10 @@ height: 560px;width: 650px;position: absolute;top: 0;left: -30px;right: 0;bottom
 
 
 /* -- 404 -- */
-.erroe404-page{background: url(../images/404.png) no-repeat top center; background-size: cover;
-    height: 890px;}
+.erroe404-page{background: url(../images/404.png) no-repeat top center; background-size: cover;}
 .custom-btn {width: 171px;border-radius: 8px;background-color: #FB8F70;padding: 15px;text-align: center;
              margin: 0 auto;color: #FFFFFF;font-family: Muli;font-size: 18px;font-weight: bold;line-height: 23px;}
-.erroe404-page section{display: flex;align-items: center;justify-content: center;height: 100%;}
+.erroe404-page section{position: absolute;top: 0;left: 0;bottom: 0;right: 0;margin: auto;height: 150px;}
 /* -- 404 -- */
 
 
@@ -296,10 +295,41 @@ footer{background: #f5e1d6 url(../images/footer-background.svg) no-repeat top ce
     .homepage-section-3 .container,
     .homepage-section-4 .container {padding: 0;}
 
-    .homepage-section-2 .image-section{order: 2;background: url(../images/mobile2-bg_mobile.svg) no-repeat;background-size: contain;}
-    .homepage-section-2 .image-section img{height: auto;margin-top: -30px;width: 240px;position: relative;z-index: 1;}
+    .homepage-section-2 .image-section{order: 2;background: url(../images/mobile2-bg_mobile.svg) no-repeat;
+        background-size: 100% 100%;}
+    .homepage-section-2 .image-section img{height: auto;width: 240px;position: relative;z-index: 1;}
+    .homepage-section-2 .image-section::after{background: url('../images/homepage-section2_mobile.svg') no-repeat;
+                                              left: 0px;bottom: 100px;top: auto;height: 336px;width: 100%;
+                                              background-size: 100% 100%;}
 
-    .descp-section{text-align: center; width: 100%; margin-bottom:70px;}
+
+    .homepage-section-3 .image-section{order: 2;background: url(../images/mobile3-bg_mobile.svg) no-repeat top;
+                                        background-size:contain}
+    .homepage-section-3 .image-section img{height: auto;width: 240px;position: relative;z-index: 1; margin-top: 0;}
+    .homepage-section-3 .descp-section{width: 100%;margin-left: 0;margin: 0 auto 30px;padding: 0 5px;}
+    .homepage-section-3 .image-text-section::after {
+        content: "";
+        background: url(../images/section3-circle_mobile.svg) no-repeat;
+            background-size: auto;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: -101px;
+        left: 0px;
+        right: 0;
+        bottom: 0;
+        background-size: contain;
+        z-index: 1;
+    }
+
+    .homepage-section-4{position: relative;background: none;}
+    .homepage-section-4 .image-section{order: 2;background: url(../images/mobile4-bg_mobile.svg) no-repeat;
+    background-size: 100% 100%;}
+    .homepage-section-4 .image-section img{height: auto;width: 240px;position: relative;z-index: 1;margin-top: 30px;}
+    .homepage-section-4::after {background: url('../images/waves-web_mobile.svg') no-repeat top right;content: "";width: 170px;height: 369px;
+                                right: 0;top: -60px;position: absolute;}
+
+    .descp-section{text-align: center; width: 100%; margin-bottom:30px;}
     .descp-section h2{font-size: 24px;letter-spacing: normal;line-height: 32px;}
     .descp-section p{font-size: 16px;letter-spacing: normal;line-height: 24px;}
 
@@ -333,9 +363,7 @@ footer{background: #f5e1d6 url(../images/footer-background.svg) no-repeat top ce
     .heart-img {margin: 35px 0;width: 225px;height: 105px;}
     .heart-img-2{margin: 35px 0;float: right;height: 48px;width: 185px;}
 
-    .aboutus-section-3{background: #f5e1d6 url(../images/Team_mobile-bg.svg) no-repeat top center;
-        background-size: cover;
-        height: 946px;}
+    .aboutus-section-3{background: #f5e1d6 url(../images/Team_mobile-bg.svg) no-repeat top center;background-size: cover;height: 946px;}
     .subheading{font-size: 24px;line-height: 32px;margin-bottom: 30px;}
     .team-section{flex-direction: column;}
     .team-section li:not(:last-child){margin-bottom: 30px;}
@@ -372,14 +400,25 @@ footer{background: #f5e1d6 url(../images/footer-background.svg) no-repeat top ce
     .accordionItemHeading{padding: 15px;line-height: 25px;font-size: 16px;letter-spacing:normal;}
     .accordionItemContent{padding: 15px;font-size: 16px;line-height: 24px;padding-top: 0;}
     /* -- faq -- */
+
+    /* -- 404 -- */
+    .erroe404-page{height: 100vh;}
+    /* -- 404 -- */
     
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) and (orientation : landscape){
-    .homepage-section-2 .image-section{background: url(../images/mobile2-bg.svg) no-repeat;
-        background-size: contain;margin: 0 auto;}
+    .homepage-section-2 .image-section{background: url(../images/mobile2-bg.svg) no-repeat;background-size: contain;margin: 0 auto;}
+    .homepage-section-2 .image-section::after{content: "";position: absolute;height: 314px;width: 300px;
+                                              background: url('../images/homepage-section2.png') no-repeat;left: auto;top: 80px;
+                                              background-size: contain;}
+    
+    .homepage-section-3 .image-section{background: url(../images/mobile3-bg.svg) no-repeat;background-size: contain;margin: 0 auto;}
+
+    .homepage-section-4 .image-section{background: url(../images/mobile4-bg.svg) no-repeat;background-size: contain;margin: 0 auto;}
+
     .testimonial{background: url('../images/testimonials-backgroud.png') no-repeat;background-size: cover;}
-    }
+    }        
 
 @media only screen and (min-width:768px) and (max-width:991px) {
     .container{max-width: 750px;}

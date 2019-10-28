@@ -17,10 +17,10 @@
     <script src="js/custom.js"></script>
 </head>
 
-<body>
+<body class="erroe404-page">
     <div class="wrapper">
-        <div class="erroe404-page">
-            <header id="myHeader">
+        <div >
+            <header id="myHeader" class="">
                 <div class="container">
                     <div class="header-section">
                         <div class="logo">
@@ -28,7 +28,7 @@
                                 <img src="images/logo.png" alt="EMI logo" title="EMI Logo">
                             </a>
                         </div>
-                        <nav>
+                        <nav class="web-menu">
                             <ul>
                                 <li>
                                     <a href="about.html">About Us</a>
@@ -43,6 +43,49 @@
                         </nav>
                         <div class="download-app">
                             <img src="images/download-app.svg">
+                        </div>
+                        <div class="mobile-menu-icon" onclick="openNav()">
+                            <a href="javascript:void(0)">
+                                <img src="images/mobile-menu.svg">
+                            </a>
+                        </div>
+                        <div id="mySidepanel" class="mobile-panel">
+                            <div class="mobile-panel-box">
+                                <div class="mobile-panel-heading">
+                                    <a href="javascript:void(0)">
+                                        <img src="images/logo.png">
+                                    </a>
+                                    <a href="javascript:void(0)" class="menu-close" onclick="closeNav()">
+                                        <img src="images/close.svg">
+                                    </a>
+                                </div>
+                                <div class="menu-navigation">
+                                    <nav>
+                                        <ul>
+                                            <li class="active">
+                                                <a href="about.html">About Us</a>
+                                            </li>
+                                            <li>
+                                                <a href="404.html">Blog</a>
+                                            </li>
+                                            <li>
+                                                <a href="faq.html">FAQ</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                    <div class="socai-media">
+                                        <a href="">
+                                            <img src="images/facebook.png" alt="facebook">
+                                        </a>
+                                        <a href="">
+                                            <img src="images/instagram.png" alt="instagram">
+                                        </a>
+                                    </div>
+                                    <div class="download-app">
+                                        <img src="images/download-app.svg">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -74,5 +117,15 @@
         }
     }
 </script>
-
+<script>
+        function openNav() {
+            document.getElementById("mySidepanel").style.width = "100%";
+            document.body.style.overflow = "hidden";
+        }
+    
+        function closeNav() {
+            document.getElementById("mySidepanel").style.width = "0";
+            document.body.style.overflow = "auto";
+        }
+    </script>
 </html>
