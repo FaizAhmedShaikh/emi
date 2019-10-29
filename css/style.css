@@ -285,13 +285,15 @@ footer{background: #f5e1d6 url(../images/footer-background.svg) no-repeat top ce
     
     
     /* -- HomePage -- */
+    .right-side{margin-left: initial;}
+
     .homepage-section-1 {width: 100%;background: url(../images/home_mobile_banner.svg) no-repeat;
                         height: auto;background-size: 100% 60%;}
     .your-daily-relations{margin: 0 auto;font-size: 24px;line-height: 32px;padding-top: 0;text-align: center;letter-spacing: normal;}
     .homepage-email-textbox-section{margin: 30px 0 50px;}
     .homepage-email-textbox-section .send-btn{margin-top: 25px;position: relative;z-index: 1;}
     .homepage-email-textbox-section .enter-your-email {width: 100%;max-width: 300px;}
-    .homepage-section-1 .image-section{position: relative;background: none}
+    .homepage-section-1 .image-section{position: relative;background: none;width: 100%;margin: 0 auto;}
     .homepage-section-1 .image-section::after {background: url(../images/dottedshape.svg) no-repeat;content: "";
                                                 height: 300px;width: 171px;position: absolute;top: -120px;
                                                 right: -15px;background-size: cover;z-index: 0;}
@@ -304,15 +306,16 @@ footer{background: #f5e1d6 url(../images/footer-background.svg) no-repeat top ce
     .homepage-section-4 .container {padding: 0;}
 
     .homepage-section-2 .image-section{order: 2;background: url(../images/mobile2-bg_mobile.svg) no-repeat;
-        background-size: 100% 100%;}
-    .homepage-section-2 .image-section img{height: auto;width: 240px;position: relative;z-index: 1;}
+        background-size: 100% 100%;margin: 0 auto;height:440px;;}
+    .homepage-section-2 .image-section img{height: auto;width: 240px;position: relative;z-index: 1;margin-top: -30px;}
     .homepage-section-2 .image-section::after{background: url('../images/homepage-section2_mobile.svg') no-repeat;
-                                              left: 0px;bottom: 100px;top: auto;height: 336px;width: 100%;
+                                              left: 0px;bottom: 0;top: auto;height: 336px;width: 100%;
                                               background-size: 100% 100%;}
+                                              .homepage-section-2 .descp-section{margin-bottom: 70px;}
 
     .homepage-section-3 .image-text-section{padding-top: 100px}
     .homepage-section-3 .image-section{order: 2;background: url(../images/mobile3-bg_mobile.svg) no-repeat top;
-                                        background-size:contain;height: auto;width: 570px;}
+        background-size: 100% 100%;height: 440px;width: 570px;margin: 0 auto;}
     .homepage-section-3 .image-section img{height: auto;width: 240px;position: relative;z-index: 1; margin-top: 0;}
     .homepage-section-3 .descp-section{width: 100%;margin-left: 0;margin: 0 auto 30px;padding: 0 5px;position: relative;
         z-index: 2;}
@@ -320,8 +323,10 @@ footer{background: #f5e1d6 url(../images/footer-background.svg) no-repeat top ce
 
     .homepage-section-4{position: relative;background: none;}
     .homepage-section-4 .image-section{order: 2;background: url(../images/mobile4-bg_mobile.svg) no-repeat;
-    background-size: 100% 100%;}
-    .homepage-section-4 .image-section img{height: auto;width: 240px;position: relative;z-index: 1;margin-top: 30px;}
+    background-size: 100% 100%;margin: 0 auto; height: 440px;}
+    .homepage-section-4 .image-section img{height: auto;width: 240px;position: relative;z-index: 1;
+        margin-top: -30px;}
+    .homepage-section-4 .descp-section{margin-bottom: 70px;}
     .homepage-section-4::after {background: url('../images/waves-web_mobile.svg') no-repeat top right;content: "";width: 170px;height: 369px;
                                 right: 0;top: -60px;position: absolute;}
 
@@ -386,9 +391,9 @@ footer{background: #f5e1d6 url(../images/footer-background.svg) no-repeat top ce
 
 
     /* -- faq -- */
-    .faq-section-1 {background: #f5e1d6 url(../images/faq_mobile-banner.svg) no-repeat top center;
-                    background-size: cover;height: 327px;}   
-    .faq-section-1 section{height: auto;}
+    .faq-section-1 {background: #f5e1d6 url(../images/NewProject.png) no-repeat top center;
+                    background-size: 100% 100%;height: 327px;}   
+    .faq-section-1 section{height: 70%;}
     .if-you-don-t-see-you{font-size: 16px;width: 100%;line-height: 24px;}
     .if-you-don-t-see-you p {display: inline;}
 
@@ -416,6 +421,7 @@ footer{background: #f5e1d6 url(../images/footer-background.svg) no-repeat top ce
     .homepage-section-4 .image-section{background: url(../images/mobile4-bg.svg) no-repeat center center;background-size: contain;margin: 0 auto;}
 
     .testimonial{background: url('../images/testimonials-backgroud.png') no-repeat;background-size: cover;}
+    .faq-section-1{background: #f5e1d6 url(../images/FAQ-bg.png) no-repeat top center;background-size:100% 100%;}
     }        
 
 @media only screen and (min-width:768px) and (max-width:991px) {
