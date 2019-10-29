@@ -20,76 +20,109 @@
 <body>
     <div class="wrapper">
         <div class="aboutus-section-1">
-            <header id="myHeader">
-                <div class="container">
-                    <div class="header-section">
-                        <div class="logo">
-                            <a href="#">
-                                <img src="images/logo.png" alt="EMI logo" title="EMI Logo">
-                            </a>
-                        </div>
-                        <nav class="web-menu">
-                            <ul>
-                                <li class="active">
-                                    <a href="about.html">About Us</a>
-                                </li>
-                                <li>
-                                    <a href="404.html">Blog</a>
-                                </li>
-                                <li>
-                                    <a href="faq.html">FAQ</a>
-                                </li>
-                            </ul>
-                        </nav>
-                        <div class="download-app">
-                            <img src="images/download-app.svg">
-                        </div>
-                        <div class="mobile-menu-icon" onclick="openNav()">
-                            <a href="javascript:void(0)">
-                                <img src="images/mobile-menu.svg">
-                            </a>
-                        </div>
-                        <div id="mySidepanel" class="mobile-panel">
-                            <div class="mobile-panel-box">
-                                <div class="mobile-panel-heading">
-                                    <a href="javascript:void(0)">
-                                        <img src="images/logo.png">
-                                    </a>
-                                    <a href="javascript:void(0)" class="menu-close" onclick="closeNav()">
-                                        <img src="images/close.svg">
+                <header class="">
+                        <div class="container">
+                            <div class="header-section">
+                                <div class="logo">
+                                    <a href="index.html">
+                                        <img src="images/logo.png" alt="EMI logo" title="EMI Logo">
                                     </a>
                                 </div>
-                                <div class="menu-navigation">
-                                    <nav>
-                                        <ul>
-                                            <li class="active">
-                                                <a href="about.html">About Us</a>
-                                            </li>
-                                            <li>
-                                                <a href="404.html">Blog</a>
-                                            </li>
-                                            <li>
-                                                <a href="faq.html">FAQ</a>
-                                            </li>
-                                        </ul>
-                                    </nav>
-                                    <div class="socai-media">
-                                        <a href="">
-                                            <img src="images/facebook.png" alt="facebook">
-                                        </a>
-                                        <a href="">
-                                            <img src="images/instagram.png" alt="instagram">
-                                        </a>
+                                <nav class="web-menu">
+                                    <ul>
+                                        <li class="active">
+                                            <a href="about.html">About Us</a>
+                                        </li>
+                                        <li>
+                                            <a href="404.html">Blog</a>
+                                        </li>
+                                        <li>
+                                            <a href="faq.html">FAQ</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <div class="download-app">
+                                    <img src="images/download-app.svg">
+                                </div>
+                                <div class="mobile-menu-icon" onclick="openNav()">
+                                    <a href="javascript:void(0)">
+                                        <img src="images/mobile-menu.svg">
+                                    </a>
+                                </div>
+        
+                                <div id="myHeader" class="sticky-header">
+                                    <div class="container">
+                                        <div class="header-section">
+                                            <div class="logo">
+                                                <a href="index.html">
+                                                    <img src="images/logo.png" alt="EMI logo" title="EMI Logo">
+                                                </a>
+                                            </div>
+                                            <nav class="web-menu">
+                                                <ul>
+                                                    <li>
+                                                        <a href="about.html">About Us</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="404.html">Blog</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="faq.html">FAQ</a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                            <div class="download-app">
+                                                <img src="images/download-app.svg">
+                                            </div>
+                                            <div class="mobile-menu-icon" onclick="openNav()">
+                                                <a href="javascript:void(0)">
+                                                    <img src="images/mobile-menu.svg">
+                                                </a>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="download-app">
-                                        <img src="images/download-app.svg">
+                                </div>
+                                <div id="mySidepanel" class="mobile-panel">
+                                    <div class="mobile-panel-box">
+                                        <div class="mobile-panel-heading">
+                                            <a href="index.html">
+                                                <img src="images/logo.png">
+                                            </a>
+                                            <a href="javascript:void(0)" class="menu-close" onclick="closeNav()">
+                                                <img src="images/close.svg">
+                                            </a>
+                                        </div>
+                                        <div class="menu-navigation">
+                                            <nav>
+                                                <ul>
+                                                    <li class="active">
+                                                        <a href="about.html">About Us</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="404.html">Blog</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="faq.html">FAQ</a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                            <div class="socai-media">
+                                                <a href="">
+                                                    <img src="images/facebook.png" alt="facebook">
+                                                </a>
+                                                <a href="">
+                                                    <img src="images/instagram.png" alt="instagram">
+                                                </a>
+                                            </div>
+                                            <div class="download-app">
+                                                <img src="images/download-app.svg">
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </header>
+                    </header>
 
             <section>
                 <div class="container">
@@ -195,20 +228,16 @@
     </div>
 </body>
 <script>
-    window.onscroll = function () { myFunction() };
-
-    var header = document.getElementById("myHeader");
-    var sticky = header.offsetTop;
-
-    function myFunction() {
-        if (window.pageYOffset > sticky) {
-            header.classList.add("sticky-header");
-
-        } else {
-            header.classList.remove("sticky-header");
+        window.onscroll = function () { scrollFunction() };
+    
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myHeader").style.top = "0";
+            } else {
+                document.getElementById("myHeader").style.top = "-100px";
+            }
         }
-    }
-</script>
+    </script>
 <script>
     function openNav() {
         document.getElementById("mySidepanel").style.width = "100%";

@@ -20,11 +20,11 @@
 <body>
     <div class="wrapper homepage-wrapper">
         <div class="homepage-section-1">
-            <header id="myHeader" class="">
+            <header class="">
                 <div class="container">
                     <div class="header-section">
                         <div class="logo">
-                            <a href="#">
+                            <a href="index.html">
                                 <img src="images/logo.png" alt="EMI logo" title="EMI Logo">
                             </a>
                         </div>
@@ -49,10 +49,43 @@
                                 <img src="images/mobile-menu.svg">
                             </a>
                         </div>
+
+                        <div id="myHeader" class="sticky-header">
+                            <div class="container">
+                                <div class="header-section">
+                                    <div class="logo">
+                                        <a href="index.html">
+                                            <img src="images/logo.png" alt="EMI logo" title="EMI Logo">
+                                        </a>
+                                    </div>
+                                    <nav class="web-menu">
+                                        <ul>
+                                            <li>
+                                                <a href="about.html">About Us</a>
+                                            </li>
+                                            <li>
+                                                <a href="404.html">Blog</a>
+                                            </li>
+                                            <li>
+                                                <a href="faq.html">FAQ</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                    <div class="download-app">
+                                        <img src="images/download-app.svg">
+                                    </div>
+                                    <div class="mobile-menu-icon" onclick="openNav()">
+                                        <a href="javascript:void(0)">
+                                            <img src="images/mobile-menu.svg">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div id="mySidepanel" class="mobile-panel">
                             <div class="mobile-panel-box">
                                 <div class="mobile-panel-heading">
-                                    <a href="javascript:void(0)">
+                                    <a href="index.html">
                                         <img src="images/logo.png">
                                     </a>
                                     <a href="javascript:void(0)" class="menu-close" onclick="closeNav()">
@@ -100,7 +133,7 @@
                                 <button class="send-btn">Request access</button>
                             </div>
                             <div class="thank-you-for-reques ">
-                                Thank you for requesting access.  We will follow up with an email with a code and a link to our app!
+                                Thank you for requesting access. We will follow up with an email with a code and a link to our app!
                             </div>
                         </div>
                         <div class="image-section right-side">
@@ -131,7 +164,7 @@
                         <p>Reply over text or in app when it’s convenient for you</p>
                     </div>
                     <div class="image-section right-side">
-                        <img src="images/mobile-3.svg"/>
+                        <img src="images/mobile-3.svg" />
                     </div>
                 </div>
             </div>
@@ -184,7 +217,7 @@
                         <button class="send-btn">Request access</button>
                     </div>
                     <div class="thank-you-for-reques ">
-                        Thank you for requesting access.  We will follow up with an email with a code and a link to our app!
+                        Thank you for requesting access. We will follow up with an email with a code and a link to our app!
                     </div>
                 </div>
             </div>
@@ -195,7 +228,7 @@
                 <p class="sign-up-for-our-news">Sign up for our newsletter</p>
                 <div class="footer-box">
                     <div class="newsletter">
-                        
+
                         <div class="email-textbox-section">
                             <input type="email" placeholder="Enter your email" class="enter-your-email" />
                             <button class="send-btn">
@@ -203,7 +236,7 @@
                             </button>
                         </div>
                         <div class="thank-you-for-reques ">
-                            Thank you for requesting access.  We will follow up with an email with a code and a link to our app!
+                            Thank you for requesting access. We will follow up with an email with a code and a link to our app!
                         </div>
                     </div>
                     <div class="socai-media">
@@ -220,7 +253,7 @@
                         <a href="">Privacy Policy</a>
                     </div>
                 </div>
-                
+
             </div>
         </footer>
 
@@ -232,29 +265,13 @@
     </div>
 </body>
 <script>
-    window.onscroll = function () { myFunction() };
+    window.onscroll = function () { scrollFunction() };
 
-    var header = document.getElementById("myHeader");
-    var sticky = header.offsetTop;
-
-    function myFunction() {
-        if (window.pageYOffset > sticky) {
-            //header.classList.add("sticky-header");
-            header.style.background = '#f8c5b0';
-            header.style.transition = 'all 1s ease-in-out';
-            header.style.position = 'fixed';
-            header.style.width = '100%';
-            header.style.zIndex = '99';
-            //header.style.height = "0px";
-
-
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("myHeader").style.top = "0";
         } else {
-           // header.classList.remove("sticky-header");
-            header.style.background = 'transparent';
-            header.style.transition = 'all 1s ease-in-out';
-            header.style.position = 'relative';
-           // header.style.height = "100px";
-
+            document.getElementById("myHeader").style.top = "-100px";
         }
     }
 </script>
