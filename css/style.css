@@ -352,8 +352,8 @@ footer{background: #f5e1d6 url(../images/footer-background.svg) no-repeat top ce
 
 
     /* -- AboutUs -- */
-    .aboutus-section-1 {background: #f5e1d6 url(../images/About_mob-bg-1.svg) no-repeat top center;
-                        background-size: cover;height: 327px;}
+    .aboutus-section-1 {background: #f5e1d6 url(../images/About_mob-bg-1.png) no-repeat top center;
+                        background-size: 100% 100%;height: 327px;}
     .logo img{width: 63px;height: 26px;}
     .strong-relationships{font-size: 24px;line-height: 32px;margin-bottom: 10px;}
     .live-happier-and-hea{font-size: 16px;}
@@ -366,7 +366,7 @@ footer{background: #f5e1d6 url(../images/footer-background.svg) no-repeat top ce
     .heart-img {margin: 35px 0;width: 225px;height: 105px;}
     .heart-img-2{margin: 35px 0;float: right;height: 48px;width: 185px;}
 
-    .aboutus-section-3{background: #f5e1d6 url(../images/Team_mobile-bg.svg) no-repeat top center;background-size: cover;height: 946px;}
+    .aboutus-section-3{background: #f5e1d6 url(../images/Team_mobile-bg.png) no-repeat top center;background-size: 100% 100%;height: 946px;}
     .subheading{font-size: 24px;line-height: 32px;margin-bottom: 30px;}
     .team-section{flex-direction: column;}
     .team-section li:not(:last-child){margin-bottom: 30px;}
@@ -422,6 +422,7 @@ footer{background: #f5e1d6 url(../images/footer-background.svg) no-repeat top ce
 
     .testimonial{background: url('../images/testimonials-backgroud.png') no-repeat;background-size: cover;}
     .faq-section-1{background: #f5e1d6 url(../images/FAQ-bg.png) no-repeat top center;background-size:100% 100%;}
+    .aboutus-section-1{background: #f5e1d6 url(../images/About-bg-1.png) no-repeat top center;background-size:100% 100%;}
     }        
 
 @media only screen and (min-width:768px) and (max-width:991px) {
