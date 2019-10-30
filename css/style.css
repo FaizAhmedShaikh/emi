@@ -335,8 +335,8 @@ footer{background: #f5e1d6 url(../images/footer-background.svg) no-repeat top ce
     .descp-section p{font-size: 16px;letter-spacing: normal;line-height: 24px;}
 
 
-    .testimonial{background: url('../images/testimonials-backgroud_mobile.svg') no-repeat;margin-top: 100px;
-                background-size: cover;height: auto;}
+    .testimonial{background: url('../images/testimonials-backgroud_mobile.png') no-repeat;margin-top: 100px;
+                background-size: 100% 100%;height: auto;}
     .testimonial-box{width: 100%;;}
     .testimonial-content{font-size: 24px;letter-spacing: normal;line-height: 32px;}
     .testimonial-descp p{font-size:18;line-height: 24px;}
